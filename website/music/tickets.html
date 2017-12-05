@@ -1,144 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
 	<meta charset="utf-8">
-
-    <title>Epic Music Concert</title>
-	
-	<link rel="stylesheet" href="css/softreset.css">
-    <link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
-	
+	<title>Epic Music Concert</title>
+	<link href="css/softreset.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]--> 
+    <![endif]-->
+</head>
+<body>
+	<!-- Header -->
+	<header class="primary-header container group">
+		<h1 class="logo"><a href="index.html"><img alt="Epic Music Concert Logo" src="images/half-star.png">Epic Music<br>
+		Concert</a></h1>
+		<h3 class="tagline">July 22&ndash;24th, 2016 &mdash; Denver, Colorado</h3>
+		<nav class="nav primary-nav">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li><!--
+          --><li>
+					<a href="musicians.html">Musicians</a>
+				</li><!--
+          --><li>
+					<a href="program.html">Program</a>
+				</li><!--
+          --><li>
+					<a href="venue.html">Venue</a>
+				</li><!--
+          --><li>
+					<a href="tickets.html">Tickets</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 	
-  </head>
-
-  <body>
-
-  <!-- Header -->
-
-    <header class="primary-header container group">
-	  <h1 class="logo"><a href="index.html"><img src="images/half-star.png" alt="Epic Music Concert Logo" />Epic Music<br>Concert</a></h1>
-
-      <h3 class="tagline">July 22&ndash;24th, 2016 &mdash; Denver, Colorado</h3>
-
-    <nav class="nav primary-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li><!--
-          --><li><a href="musicians.html">Musicians</a></li><!--
-          --><li><a href="program.html">Program</a></li><!--
-          --><li><a href="venue.html">Venue</a></li><!--
-          --><li><a href="tickets.html">Tickets</a></li>
-        </ul>
-      </nav>
-
-    </header>
-
-    <!-- Lead -->
-
-<div style="width: 100%">
-
-    <section class="row-alt" style="background-image: url('images/hero-tickets.jpg'); background-size: cover;">
-      <div class="lead container">
-
-        <h1>Purchase Tickets</h1>
-
-        <p>See you soon!</p>
-
-      </div>
-    </section>
-
-    <!-- Main content -->
-
-    <section class="row">
-      <div class="grid">
-	  
-        <!-- Details -->
-
-		
-		<!--        Order form        -->
-		<h3>Order Form</h3>
-		<p>Once your order is completed, you will receive an emailed confirmation. </p><br>
-		
-		
-		<form class="col-2-3" action="#" method="post">
-
-          <fieldset class="register-group">
-            <label>
-              Full Name
-              <input type="text" name="name" placeholder="Full name" required>
-            </label>
+	<!-- Lead -->
+	<div class="row-alt" style="background-image: url('images/hero-tickets.jpg'); background-size: cover;">
+		<div class="lead container">
+			<span class="heading">Purchase Tickets</span>
+			<p>See you soon!</p>
+		</div>
+	</div>
+	
+	<!-- Main content -->
+	<section class="row">
+		<div class="grid">
 			
-            <label>
-              Email
-              <input type="email" name="email" placeholder="Email address" required>
-            </label>
-			
-			<label>
-			Concert Date<br>
-			<select name="day" size="3" style="width:250px; height: 70px" required>
-				<option value="Friday">Friday, July 24, 2016</option>
-				<option value="Saturday">Saturday, July 25, 2016</option>
-				<option value="Sunday">Sunday, July 26, 2016</option>
-			</select>
-			</label>
-			
-            <label>
-              Number of Tickets
-              <select name="quantity" required>
-			    <option value=""></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </label>
-			
-            <label>
-			Exclusive "Meet & Greet" Backstage Pass
-			<select name="quantity">
-                <option value=""></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </label>
-			
-            <label>
-              Comments
-              <textarea name="comments"></textarea>
-            </label>
-
-          </fieldset>
-
-          <input class="btn btn-default" type="submit" name="submit" value="Purchase">
-
-        </form>
-
-      </div>
-    </section>
-
-<!-- Footer -->
-
-    <footer class="primary-footer container group">
-
-      <small>&copy; 2017</small>
-
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li><!--
-          --><li><a href="musicians.html">Musicians</a></li><!--
-          --><li><a href="program.html">Program</a></li><!--
-          --><li><a href="venue.html">Venue</a></li><!--
-          --><li><a href="tickets.html">Tickets</a></li>
-        </ul>
-      </nav>
-
-    </footer>
-
-  </body>
+			<!-- Details -->
+			<!--        Order form        -->
+			<h3>Order Form</h3>
+			<p>Once your order is completed, you will receive an emailed confirmation.</p><br>
+			<form action="#" class="col-2-3" method="post">
+				<fieldset class="register-group">
+					<label>Full Name <input name="name" placeholder="Full name" required="" type="text"></label> <label>Email <input name="email" placeholder="Email address" required="" type="email"></label> <label>Concert Date<br>
+					<select name="day" required="" size="3" style="width:250px; height: 70px">
+						<option value="Friday">
+							Friday, July 24, 2016
+						</option>
+						<option value="Saturday">
+							Saturday, July 25, 2016
+						</option>
+						<option value="Sunday">
+							Sunday, July 26, 2016
+						</option>
+					</select></label> <label>Number of Tickets <select name="quantity" required="">
+						<option value="">
+							0
+						</option>
+						<option value="1">
+							1
+						</option>
+						<option value="2">
+							2
+						</option>
+						<option value="3">
+							3
+						</option>
+						<option value="4">
+							4
+						</option>
+						<option value="5">
+							5
+						</option>
+					</select></label> <label>Exclusive "Meet & Greet" Backstage Pass <select name="quantity">
+						<option value="">
+							0
+						</option>
+						<option value="1">
+							1
+						</option>
+						<option value="2">
+							2
+						</option>
+						<option value="3">
+							3
+						</option>
+					</select></label> <label>Comments 
+					<textarea name="comments"></textarea></label>
+				</fieldset><input class="btn btn-default" name="submit" type="submit" value="Purchase">
+			</form>
+		</div>
+	</section>
+	
+	<!-- Footer -->
+	<footer class="primary-footer container group">
+		<small>&copy; 2017</small>
+		<nav class="nav">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li><!--
+          --><li>
+					<a href="musicians.html">Musicians</a>
+				</li><!--
+          --><li>
+					<a href="program.html">Program</a>
+				</li><!--
+          --><li>
+					<a href="venue.html">Venue</a>
+				</li><!--
+          --><li>
+					<a href="tickets.html">Tickets</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+</body>
 </html>
