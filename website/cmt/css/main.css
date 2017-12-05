@@ -355,8 +355,27 @@ textarea {
 @media only screen and (orientation: portrait) {
 	#hero-tagline {
 		position: relative;
-		top: 10%;
+		top: 30%;
 		left: 10%;
 		font: 500 40px volkhov;
 	}
+	.row-padding {
+	padding: 0 8px;
+}
+.padding-36 {
+	padding: 0 18px !important;
+}
+.padding-16 {
+	padding: 0 8px !important;
+}
+.margin-bottom {
+	margin-bottom: 8px !important;
+}
+.h2-padding {
+	padding: 10px 5px 10px 15px;
+}
+.h4-padding {
+	padding: 0 10px 10px 15px;
+}
+	
 }
