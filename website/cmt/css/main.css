@@ -143,9 +143,10 @@ hr {
 
 #hero-image {
 	background: #FEE5AC url('../images/01.jpg') no-repeat center;
-	max-width: 100%;
+	width: 100%;
 	height: 100%;
 	padding-top: 1px;
+	background-clip: content-box;
 }
 #hero-tagline {
 	position: relative;
