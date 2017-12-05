@@ -351,3 +351,12 @@ textarea {
 		font: 500 80px volkhov;
 	}
 }
+
+@media only screen and (max-width: 320px) {
+	#hero-tagline {
+		position: relative;
+		top: 10%;
+		left: 10%;
+		font: 500 40px volkhov;
+	}
+}
