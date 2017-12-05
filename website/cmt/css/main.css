@@ -11,7 +11,6 @@ html, body {
 	line-height: 1.5;
 }
 html {
-	overflow: hidden;
 	overflow-x: hidden;
 }
 /*
@@ -345,6 +344,9 @@ textarea {
 	}
 }
 @media only screen and (max-width: 767px) {
+	html {
+		overflow: hidden;
+	}
 	#hero-tagline {
 		position: relative;
 		top: 19%;
@@ -354,17 +356,20 @@ textarea {
 }
 
 @media only screen and (orientation: portrait) {
+	html {
+		overflow: hidden;
+	}
 	#hero-tagline {
 		position: relative;
-		top: 30%;
+		top: 15%;
 		left: 10%;
 		font: 500 40px volkhov;
 	}
-	.row-padding {
-	padding: 0 8px;
+.row-padding {
+	padding: 0 4px;
 }
 .padding-36 {
-	padding: 0 18px !important;
+	padding: 0 12px !important;
 }
 .padding-16 {
 	padding: 0 8px !important;
