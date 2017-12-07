@@ -140,7 +140,10 @@ hr {
   Hero
   ========================================
 */
-
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+}
 #hero-image {
 	background: #FEE5AC url('../images/01.jpg') no-repeat center;
 	width: 100%;
