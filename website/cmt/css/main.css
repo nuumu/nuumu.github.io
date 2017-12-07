@@ -343,10 +343,8 @@ textarea {
 		display: none! important
 	}
 }
-@media only screen and (max-width: 767px) {
-	html {
-		overflow: hidden;
-	}
+@media (max-width: 767px) {
+
 	#hero-tagline {
 		position: relative;
 		top: 19%;
@@ -355,10 +353,8 @@ textarea {
 	}
 }
 
-@media only screen and (orientation: portrait) {
-	html {
-		overflow: hidden;
-	}
+@media (orientation: portrait) {
+
 	#hero-tagline {
 		position: relative;
 		top: 15%;
