@@ -10,7 +10,7 @@ html, body {
 	font: 15px Verdana, sans-serif;
 	line-height: 1.5;
 }
-html {
+html, body {
 	overflow-x: hidden;
 }
 /*
@@ -35,6 +35,7 @@ html {
 
 [class*="col-"] {
 	width: 100%;
+	overflow-x: hidden;
 }
 @media only screen and (min-width: 600px) {
 	/* For tablets: */
