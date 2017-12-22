@@ -62,8 +62,8 @@ header {
 	padding: 44px 0 22px 0;
 }
 .special {
-	border: 1px solid #999;
-	background: cornsilk;
+	border: 2px solid #999; 
+	background: cornsilk; 
 	padding: 20px 15px 0 20px;
 }
 /*
@@ -408,7 +408,7 @@ table h4 {
 */
 
 form {
-	border: 1px solid #ccc;
+	border: 2px solid #ccc; 
 	padding: 25px 0;
 	margin-bottom: 22px;
 }
