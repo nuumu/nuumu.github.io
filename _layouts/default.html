@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li>email</li>
+<html>
 
-				</ul>
-			</footer>
-		</body>
-	</html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>{{ PORTFOLIO }}</title>
+    <link rel="stylesheet" type="text/css" href="portfolio/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="portfolio/css/main.css">
+    <link rel="stylesheet" type="text/css" href="portfolio/css/device-preview.css">
+</head>
+
+<body>
+    <nav class="sidenav center">
+        <img class="pad-bottom-10" src="images/deco-border.png" alt="Decorative border" />
+        <h1><a href="index.html">HOME</a></h1><br />
+        <h1>DESKTOP</h1>
+        <a href="desktop1.html">Sample 1</a>
+        <a href="desktop2.html">Sample 2</a>
+        <br />
+        <h1>EMAIL</h1>
+        <a href="email1.html">Sample 1</a>
+        <a href="email2.html">Sample 2</a>
+        <img class="pad-top-10" src="images/deco-border-rev.png" alt="Decorative border" />
+    </nav>
+	
+    <section class="container">
+			
+	{{ content }}
+			
+    </section>
+
+</body>
+</html>
