@@ -65,7 +65,7 @@ h1 {
 }
 
 .about {
-	font-family: Georgia, "Cambria", serif;
+	font-family: Georgia, Cambria, serif;
 }
 @media screen and (max-height: 450px) {
 	.sidenav {
