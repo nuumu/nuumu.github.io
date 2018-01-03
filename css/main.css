@@ -64,7 +64,7 @@ h1 {
 	padding-top: 10px;
 }
 
-.about {
+p.serif {
 	font-family: Georgia, Cambria, serif;
 }
 @media screen and (max-height: 450px) {
