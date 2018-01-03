@@ -66,6 +66,7 @@ h1 {
 
 p.serif {
 	font-family: Georgia, Cambria, serif;
+	font-size: 18px;
 }
 @media screen and (max-height: 450px) {
 	.sidenav {
