@@ -5,7 +5,7 @@ body, * {
 
 .sidenav {
 	height: 100%;
-	width: 240px;
+	width: 220px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -33,7 +33,7 @@ h1 {
 }
 
 .container {
-	margin-left: 272px;
+	margin-left: 240px;
  /* Same or larger as the width of the sidenav */
 	margin-top: 2%;
 	font-size: 28px;
