@@ -64,6 +64,9 @@ h1 {
 	padding-top: 10px;
 }
 
+.about {
+	font-family: Georgia, "Cambria", serif;
+}
 @media screen and (max-height: 450px) {
 	.sidenav {
 		padding-top: 15px;
