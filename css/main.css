@@ -6,9 +6,9 @@ body, * {
 
 .contentbox {
     margin: 0 auto;
-    padding: 2em;
+    padding: 0 2em;
     max-width: 800px;
-    margin-bottom: 50px;
+    margin-top: 50px;
     line-height: 1.6em;
 }
 
