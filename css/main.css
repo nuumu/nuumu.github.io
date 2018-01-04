@@ -8,9 +8,9 @@ body, * {
      margin: 0;
      color: #333;
      font-family: "Georgia", "Cambria", serif;
-     font-size: 3em;
+     font-size: 2em;
      text-align: center;
-     padding: 2.5em 2em 0;
+     padding: 2em 0;
      border-bottom: 1px solid #eee;
  }
 
