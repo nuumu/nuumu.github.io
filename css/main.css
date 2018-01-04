@@ -22,12 +22,11 @@ body, * {
     padding: 0 2em;
     max-width: 800px;
     margin-top: 50px;
-    line-height: 1.6em;
+    line-height: 1.3em;
 }
 
 .serif {
     font-family: "Georgia", "Cambria", serif;
-    font-size: 18px;
 }
 
 .sidenav {
