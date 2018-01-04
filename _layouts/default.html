@@ -8,27 +8,48 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/device-preview.css">
+	
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
-<body>
-    <nav class="sidenav center">
-        <img class="pad-bottom-10" src="images/deco-border.png" alt="Decorative border" />
-        <h1><a href="index.html">HOME</a></h1><br />
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+		
+		<h1><a href="index.html">HOME</a></h1>
+
         <h1>DESKTOP</h1>
-        <a href="desktop1.html">Sample 1</a>
-        <a href="desktop2.html">Sample 2</a>
-        <br />
+		<ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="desktop1.html">Sample 1</a></li>
+        <li class="pure-menu-item"><a href="desktop2.html">Sample 2</a></li>
+		</ul><br />
+		
         <h1>EMAIL</h1>
-        <a href="email1.html">Sample 1</a>
-        <a href="email2.html">Sample 2</a>
-        <img class="pad-top-10" src="images/deco-border-rev.png" alt="Decorative border" />
-    </nav>
-	
-    <section class="container">
+		<ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="email1.html">Sample 1</a></li>
+        <li class="pure-menu-item"><a href="email2.html">Sample 2</a></li>
+		</ul>
+		
+        </div>
+    </div>
+
+    <div id="main">
 			
 	{{ content }}
 			
-    </section>
+            </div>
+    </div>
+</div>
+
+<script src="ui.js"></script>
 
 </body>
 </html>
