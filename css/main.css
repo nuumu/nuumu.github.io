@@ -3,7 +3,7 @@ body, * {
 	margin: 0;
 }
 
-.content {
+.contentbox {
     margin: 0 auto;
     padding: 0 2em;
     max-width: 800px;
