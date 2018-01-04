@@ -14,42 +14,22 @@
     <![endif]-->
 </head>
 
-<div id="layout">
-    <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
-        <span></span>
-    </a>
-
-    <div id="menu">
-        <div class="pure-menu">
-		
-		<h1><a href="index.html">HOME</a></h1>
-
+<body>
+    <nav class="sidenav center">     
+        <h1><a href="index.html">HOME</a></h1><br />
         <h1>DESKTOP</h1>
-		<ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="desktop1.html">Sample 1</a></li>
-        <li class="pure-menu-item"><a href="desktop2.html">Sample 2</a></li>
-		</ul><br />
-		
+        <a href="desktop1.html">Sample 1</a>
+        <a href="desktop2.html">Sample 2</a>
+        <br />
         <h1>EMAIL</h1>
-		<ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="email1.html">Sample 1</a></li>
-        <li class="pure-menu-item"><a href="email2.html">Sample 2</a></li>
-		</ul>
-		
-        </div>
-    </div>
-
-    <div id="main">
-			
+        <a href="email1.html">Sample 1</a>
+        <a href="email2.html">Sample 2</a>
+    </nav>
+<section class="container">
+	
 	{{ content }}
 			
-            </div>
-    </div>
-</div>
-
-<script src="ui.js"></script>
+</section>
 
 </body>
 </html>
