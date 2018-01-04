@@ -7,6 +7,8 @@ body, * {
 .h1 {
      margin: 0;
      color: #333;
+     font-family: "Georgia", "Cambria", serif;
+     font-size: 3em;
      text-align: center;
      padding: 2.5em 2em 0;
      border-bottom: 1px solid #eee;
@@ -50,7 +52,6 @@ body, * {
 }
 
 h1 {
-	font-family: "Georgia", "Cambria", serif;
 	font-size: 25px;
 	padding: 6px 0;
 }
