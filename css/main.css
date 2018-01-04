@@ -1,105 +1,48 @@
 body, * {
 	font-family: "Lato", sans-serif;
 	margin: 0;
-	color: #777;
 }
 
-#layout,
-#menu,
-.menu-link {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-
-#layout {
-    position: relative;
-    left: 0;
-    padding-left: 0;
-}
-#layout.active #menu {
-        left: 200px;
-        width: 200px;
-    }
-
-#layout.active .menu-link {
-        left: 200px;
-    }
-
-.contentbox {
-    margin: 0 auto;
-    padding: 0 2em;
-    max-width: 800px;
-    margin-bottom: 50px;
-    line-height: 1.6em;
-}
-
-.header {
-     margin: 0;
-     color: #333;
-     text-align: center;
-     padding: 2.5em 2em 0;
-     border-bottom: 1px solid #eee;
- }
-.header h1 {
-        margin: 0.2em 0;
-        font-size: 3em;
-        font-weight: 300;
-    }
-.header h2 {
-        font-weight: 300;
-        color: #ccc;
-        padding: 0;
-        margin-top: 0;
-    }
-
-.content-subhead {
-    margin: 50px 0 20px 0;
-    font-weight: 300;
-    color: #888;
-}
-
-
-#menu {
-    margin-left: -200px; /* "#menu" width */
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1000; /* so the menu or its navicon stays above all content */
-    background: #fff;
-    overflow-y: auto;
+.sidenav {
+	height: 100%;
+	width: 15%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	overflow-x: hidden;
 	padding-top: 20px;
-    -webkit-overflow-scrolling: touch;
 }
 
-#menu a {
+.sidenav a {
+	padding: 6px 0;
 	text-decoration: none;
 	font-size: 25px;
 	color: blue;
-    }
+	display: block;
+}
 
-    /*
-    Remove all background/borders, since we are applying them to #menu.
-    */
-     #menu .pure-menu,
-     #menu .pure-menu ul {
-        border: none;
-        background: transparent;
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		text-align: center;
-    }
+.sidenav a:hover {
+	color: #222;
+}
 
 h1 {
 	font-size: 25px;
 	padding: 6px 0;
+}
 
+.container {
+	margin-left: 17%;
+ /* Same or larger as the width of the sidenav */
+	margin-top: 2%;
+	font-size: 28px;
+ /* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
+
+.center {
+	text-align: center;
 }
 
 .extlink {
@@ -107,102 +50,12 @@ h1 {
 	padding-top: 10px;
 }
 
-/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
 
-
-/*
-`.menu-link` represents the responsive menu toggle that shows/hides on
-small screens.
-*/
-.menu-link {
-    position: fixed;
-    display: block; /* show this only on small screens */
-    top: 0;
-    left: 0; /* "#menu width" */
-    background: #000;
-    background: rgba(0,0,0,0.7);
-    font-size: 10px; /* change this value to increase/decrease button size */
-    z-index: 10;
-    width: 2em;
-    height: auto;
-    padding: 2.1em 1.6em;
-}
-
-    .menu-link:hover,
-    .menu-link:focus {
-        background: #fff;
-    }
-
-    .menu-link span {
-        position: relative;
-        display: block;
-    }
-
-    .menu-link span,
-    .menu-link span:before,
-    .menu-link span:after {
-        background-color: #fff;
-        width: 100%;
-        height: 0.2em;
-    }
-
-        .menu-link span:before,
-        .menu-link span:after {
-            position: absolute;
-            margin-top: -0.6em;
-            content: " ";
-        }
-
-        .menu-link span:after {
-            margin-top: 0.6em;
-        }
-
-
-p.serif {
-	font-family: Georgia, Cambria, serif;
-	font-size: 18px;
-}
-/* -- Responsive Styles (Media Queries) ------------------------------------- */
-
-/*
-Hides the menu at `48em`, but modify this based on your app's needs.
-*/
-@media (min-width: 48em) {
-
-    .header,
-    .content {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    #layout {
-        padding-left: 200px; /* left col width "#menu" */
-        left: 0;
-    }
-    #menu {
-        left: 200px;
-    }
-
-    .menu-link {
-        position: fixed;
-        left: 200px;
-        display: none;
-    }
-
-    #layout.active .menu-link {
-        left: 200px;
-    }
-}
-
-@media (max-width: 48em) {
-    /* Only apply this when the window is small. Otherwise, the following
-    case results in extra padding on the left:
-        * Make the window small.
-        * Tap the menu to trigger the active state.
-        * Make the window large again.
-    */
-    #layout.active {
-        position: relative;
-        left: 200px;
-    }
+	.sidenav a {
+		font-size: 18px;
+	}
 }
