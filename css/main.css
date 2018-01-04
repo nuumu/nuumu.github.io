@@ -4,15 +4,18 @@ body, * {
 	color: #777;
 }
 
-.h1 {
+.title {
      margin: 0;
      color: #333;
-     font-family: "Georgia", "Cambria", serif;
-     font-size: 2em;
      text-align: center;
-     padding: 2em 0;
+     padding: 2.5em 2em 0;
      border-bottom: 1px solid #eee;
  }
+.title h2 {
+        margin: 0.2em 0;
+        font-size: 3em;
+        font-weight: 300;
+}
 
 .contentbox {
     margin: 0 auto;
