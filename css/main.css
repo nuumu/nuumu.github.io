@@ -4,25 +4,25 @@ body, * {
 	color: #777;
 }
 
-.contentbox {
-	font-family: Georgia, Cambria, serif;
-	font-size: 18px;
-    margin: 0 auto;
-    padding: 0 2em;
-    max-width: 800px;
-    margin-top: 50px;
-    line-height: 1.6em;
-}
-
-.header {
-	font-family: Georgia, Cambria, serif;
-	font-size: 18px;
+header {
+     font-family: Georgia, Cambria, serif;
+     font-size: 18px;
      margin: 0;
      color: #333;
      text-align: center;
      padding: 2.5em 2em 0;
      border-bottom: 1px solid #eee;
  }
+
+.contentbox {
+    font-family: Georgia, Cambria, serif;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-top: 50px;
+    line-height: 1.6em;
+}
 
 .sidenav {
 	height: 100%;
