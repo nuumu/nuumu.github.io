@@ -23,7 +23,7 @@ body, * {
     max-width: 800px;
     margin-top: 50px;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     line-height: 1.3em;
 }
 
